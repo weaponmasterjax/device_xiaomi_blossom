@@ -243,6 +243,7 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOTANIMATION_HALF_RES := true
 
 # Screen density
 PRODUCT_AAPT_CONFIG := xhdpi
@@ -296,8 +297,7 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilts - Kernel
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)-kernel/dtb.img:dtb.img \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)-kernel/modules,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+    $(LOCAL_PATH)-kernel/dtb.img:dtb.img
 
 # Prebuilts - Touch screen (For recovery)
 PRODUCT_COPY_FILES += \
