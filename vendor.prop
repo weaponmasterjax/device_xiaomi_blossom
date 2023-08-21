@@ -192,6 +192,7 @@ debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
+ro.hwui.render_ahead=10
 
 # TEE
 ro.vendor.mtk_microtrust_tee_support=1
